@@ -9,12 +9,13 @@
             body{ background-color: rgb(245, 245, 240);
                 font-family: 'Noto Serif JP', serif;
                 font-family: 'Zen Maru Gothic', sans-serif;
-                text-align: center;
+                text-align: justify;
             }
             div{ font-size: 50px;
                 width: 100px;
-                text-align: center;
+                text-align: justify;
                 margin-top: 50px;
+                box-sizing: border-box;
                 justify-content:center;
             }
             .floated{float: left;
@@ -23,7 +24,7 @@
         </style>
     </head>
     <body>
-        <div id="quiz">你是Stollecter裡的誰？？</div>
+        <div id="quiz">你是Stollecter裡的誰？</div>
         <div id="start">start</div>
         <div id="y1" style="display: none">超愛！我吃爆！</div>
         <div id="n1" style="display:none" class="floated">他是紫色怪物蔬菜</div>
@@ -32,8 +33,8 @@
 
 
         <script>
-            document.getElementById("y1").onclick = function(){myFunction()};
-            function myFunction() {document.getElementById("quiz").innerHTML="2. 你喜歡小動物嗎？";
+            document.getElementById("y1").onclick = function(){myFunctio()};
+            function myFunctio() {document.getElementById("quiz").innerHTML="2. 你喜歡小動物嗎？";
             document.getElementById("y1").style.display = 'none';
             document.getElementById("n1").style.display = 'none';
             document.getElementById("y2").style.display ="";
