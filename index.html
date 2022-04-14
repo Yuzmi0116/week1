@@ -32,11 +32,14 @@
         </style>
     </head>
     <body>
-        <p id="quiz">你是Stollecter裡的誰？</p>
+        <p id="quiz">你是Stollecter裡的誰？?
+        </p>
         <p id="start">start</p>
         <script>
-            <document.getElementById("start").onclick = function(){myFunction()};
-            function myFunction() {document.getElementById("quiz").innerHTML="1. 你吃茄子嗎？";}
+            document.getElementById("start").onclick = function(){myFunction()};
+            function myFunction() {document.getElementById("quiz").innerHTML="1. 你吃茄子嗎？";
+            document.getElementById("start").style.display = 'none';
+        }
         </script>
     </body>
 </html>
