@@ -32,19 +32,21 @@
 
 
         <script>
-            document.getElementById("start").onclick = function(){myFunction()};
-            function myFunction() {document.getElementById("quiz").innerHTML="1. 你吃茄子嗎？";
-            document.getElementById("start").style.display = 'none';
-            document.getElementById("y1").style.display ="";
-            document.getElementById("n1").style.display ="";
-        }
-        document.getElementById("y1").onclick = function(){myFunction()};
+            document.getElementById("y1").onclick = function(){myFunction()};
             function myFunction() {document.getElementById("quiz").innerHTML="2. 你喜歡小動物嗎？";
             document.getElementById("y1").style.display = 'none';
             document.getElementById("n1").style.display = 'none';
             document.getElementById("y2").style.display ="";
             document.getElementById("n2").style.display ="";
         }
+            
+            document.getElementById("start").onclick = function(){myFunction()};
+            function myFunction() {document.getElementById("quiz").innerHTML="1. 你吃茄子嗎？";
+            document.getElementById("start").style.display = 'none';
+            document.getElementById("y1").style.display ="";
+            document.getElementById("n1").style.display ="";
+        }
+        
         </script>
     </body>
 </html>
