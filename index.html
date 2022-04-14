@@ -13,20 +13,10 @@
             }
             div{ font-size: 10px;
                 width: 100px;
-                float: left;
                 text-align: center;
                 margin-top: 50px;
             }
-            a{text-decoration:none;
-            }
-            .remind{float: none;
-                width:100%;
-                font-size: 32px;
-
-            }
-            .infro{display:hidden;
-                float: none;
-
+            .floated{float: left;
             }
 
         </style>
@@ -35,13 +25,24 @@
         <div id="quiz">你是Stollecter裡的誰？</div>
         <div id="start">start</div>
         <div id="y1" style="display: none">超愛！我吃爆！</div>
-        <div id="n1" style="display:none">他是紫色怪物蔬菜</div>
+        <div id="n1" style="display:none" class="floated">他是紫色怪物蔬菜</div>
+        <div id="y2" style="display: none">小動物超讚！</div>
+        <div id="n2" style="display:none" class="floated">我愛我自己～</div>
+
+
         <script>
             document.getElementById("start").onclick = function(){myFunction()};
             function myFunction() {document.getElementById("quiz").innerHTML="1. 你吃茄子嗎？";
             document.getElementById("start").style.display = 'none';
             document.getElementById("y1").style.display ="";
             document.getElementById("n1").style.display ="";
+        }
+        document.getElementById("y1").onclick = function(){myFunction()};
+            function myFunction() {document.getElementById("quiz").innerHTML="2. 你喜歡小動物嗎？";
+            document.getElementById("y1").style.display = 'none';
+            document.getElementById("n1").style.display = 'none';
+            document.getElementById("y2").style.display ="";
+            document.getElementById("n2").style.display ="";
         }
         </script>
     </body>
