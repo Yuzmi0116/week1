@@ -10,55 +10,90 @@
                 font-family: ‘cwTeXFangSong’, serif;
                 text-align: center;
             }
-            div{ font-size: 160%;
+            .fuk{ font-size: 160%;
                 text-align: left;
                 box-sizing: border-box;
                 position:absolute;
                 top: 130px;
                 border-style: solid; 
-                overflow: auto;
                 margin-left:10px;
-                margin-right: 10px;
+                width: 97%;
                 background-color: #006543;
                 color: white;
+                float: left;
+                display: block;
+                height: 80%;
+
             }
             span{background-color: #006543;
                 color: white;
                 font-style: italic;
             }
 
-            .floated{width: 50%;
+            .floated{
+                height: 100%;
                 float: right;
 
             }
+            .mem{font-size: 30px;
+                margin-top:560px;
+                margin-left: 10px;
+                text-align: left;
+
+            }
+            .photo{text-align: left;
+                overflow:hidden;
+                margin-top: 10px;
+
+            }
+            .pp{width: 150px;
+                margin-left: 30px;
+
+            }
+            
 
             @media only screen and (max-width:650px){
-                div{ font-size: 30px;
+                .fuk{ font-size: 160%;
                 text-align: left;
                 box-sizing: border-box;
                 position:absolute;
                 top: 130px;
                 border-style: solid; 
-                overflow: auto;
                 margin-left:10px;
-                margin-right: 10px;
+                width: 95%;
                 background-color: #006543;
                 color: white;
+                float: left;
+                display: block;
+                height: 120%;
             }
             span{background-color: #006543;
                 color: white;
                 font-style: italic;
             }
 
-            .floated{width: 50%;
+            .floated{height: 500px;
                 float: none;
-                left: 50%;
 
             }   
-            .namm{ margin-top: 10px;
-                font-size: 50px;
+            .mem{font-size: 30px;
+                margin-top:840px;
+                margin-left: 10px;
+                text-align: left;
 
             }
+            .photo{text-align: left;
+                overflow:hidden;
+                margin-top: 10px;
+
+            }
+            .pp{width: 150px;
+                margin-left: 30px;
+
+            }
+            
+
+           
             }
         
         </style>
@@ -66,7 +101,7 @@
     <body>
         <p style="margin-bottom: 1px; font-size: 20px;">你是Stollecter裡的......</p>
         <p style="margin-top: 5px; font-size: 50px;">✨柚子米✨</p>
-        <div>
+        <div class="fuk">
             <img src="yuzmi.png" class="floated">
             <br>
             &emsp;&emsp; 成員：柚子米  Yuzmi
@@ -82,10 +117,12 @@
             &emsp;&emsp; 社群：
             <img src="youtube.png" width="26px" >&emsp;
             <img src="twitter.png" width="26px">
-
-            
-
-
+        </div>
+        <div class="mem">
+            其他成員：
+        </div>
+        <div class="photo">
+            <img src="lorin.png" class="pp">
         </div>
     </body>
 </html>
