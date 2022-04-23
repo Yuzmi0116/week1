@@ -38,8 +38,6 @@
                 margin: auto;
                 top: 60%;
                 width: 250px;
-                
-
             }
 
             .floated{display: inline;
@@ -48,6 +46,7 @@
                 margin: auto;
                 top: 60%;
                 width: 250px;
+                height: 50px;
             }
 
             .yes{left: 0;
@@ -55,9 +54,10 @@
                 margin: auto;
                 top: 60%;
                 width: 250px;
-
+                height: 50px;
             }
 
+            
         </style>
     </head>
     <body>
@@ -67,10 +67,10 @@
         <div id="n" style="display:none" class="floated">貓派😺</div>
         <div id="y21" style="display: none" class="yes">火鍋芋頭加爆！</div>
         <div id="n21" style="display:none" class="floated">香菜超香超讚！</div>
-        <div id="y22" style="display: none" class="yes">肯Ｏ基蛋塔ohyeah</div>
+        <div id="y22" style="display: none; font-size: 25px;padding-bottom: 0.1em;" class="yes">肯Ｏ基蛋塔ohyeah</div>
         <div id="n22" style="display:none" class="floated">麥Ｏ勞薯條豪粗</div>
         <div id="y31" style="display: none" class="yes">被綠慘的苦主</div>
-        <div id="n31" style="display:none" class="floated" onclick="window.location='lorin.html';">綠人後被報復慘的黃毛</div>
+        <div id="n31" style="display:none; font-size: 23px; padding-bottom: 0.1em;" class="floated" onclick="window.location='lorin.html';">綠人後被報復慘的黃毛</div>
         <div id="y32" style="display: none" class="yes" onclick="window.location='prochi.html';">不洗澡..</div>
         <div id="n32" style="display:none" class="floated">不洗頭...</div>
         <div id="y33" style="display: none" class="yes" onclick="window.location='riana.html';">殺ㄌ他</div>
@@ -86,6 +86,7 @@
             document.getElementById("n22").style.display = 'none';
             document.getElementById("y34").style.display ="";
             document.getElementById("n34").style.display ="";
+            document.getElementById("quiz").style.fontSize ="40px"
         }
             
             document.getElementById("y22").onclick = function(){myFun()};
@@ -94,6 +95,7 @@
             document.getElementById("n22").style.display = 'none';
             document.getElementById("y33").style.display ="";
             document.getElementById("n33").style.display ="";
+            document.getElementById("quiz").style.fontSize ="35px"
         }
             
             document.getElementById("n21").onclick = function(){myFunc()};
@@ -102,6 +104,7 @@
             document.getElementById("n21").style.display = 'none';
             document.getElementById("y32").style.display ="";
             document.getElementById("n32").style.display ="";
+            document.getElementById("quiz").style.fontSize ="46px"
         }
 
             document.getElementById("y21").onclick = function(){myFunct()};
@@ -110,6 +113,8 @@
             document.getElementById("n21").style.display = 'none';
             document.getElementById("y31").style.display ="";
             document.getElementById("n31").style.display ="";
+            document.getElementById("quiz").style.fontSize ="30px"
+            
         }
             
             document.getElementById("n").onclick = function(){myFuncti()};
